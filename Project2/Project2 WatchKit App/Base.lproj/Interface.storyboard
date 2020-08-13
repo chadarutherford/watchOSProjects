@@ -18,9 +18,21 @@
                         <separator alignment="left" id="PFD-q6-70d"/>
                         <group width="1" height="0.33000000000000002" alignment="left" id="9lE-wN-43R">
                             <items>
-                                <button width="0.33000000000000002" height="1" alignment="left" id="85l-SL-ofB"/>
-                                <button width="42" height="1" alignment="left" id="wes-GY-cN4"/>
-                                <button width="0.33000000000000002" height="1" alignment="left" id="d7k-Yy-SYs"/>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="85l-SL-ofB">
+                                    <connections>
+                                        <action selector="rockTapped" destination="AgC-eL-Hgc" id="fJ0-wu-ruS"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="1" alignment="left" id="wes-GY-cN4">
+                                    <connections>
+                                        <action selector="paperTapped" destination="AgC-eL-Hgc" id="Ggb-Sc-EUA"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="d7k-Yy-SYs">
+                                    <connections>
+                                        <action selector="scissorsTapped" destination="AgC-eL-Hgc" id="5p7-wX-520"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <group width="0.90000000000000002" alignment="center" id="eaH-jp-PhW">
