@@ -21,7 +21,7 @@
                         </slider>
                         <group width="1" height="0.33000000000000002" alignment="left" id="6hA-CJ-lzX">
                             <items>
-                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="alD-9e-pOz">
+                                <picker width="0.59999999999999998" height="1" alignment="left" id="alD-9e-pOz">
                                     <connections>
                                         <action selector="baseCurrencyChanged:" destination="AgC-eL-Hgc" id="prh-nR-uHl"/>
                                     </connections>
