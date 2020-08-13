@@ -1,15 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17140" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17031"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Project2_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="0.5" height="0.5" alignment="center" id="AN6-LO-4fX"/>
+                        <separator alignment="left" id="PFD-q6-70d"/>
+                        <group width="1" height="0.33000000000000002" alignment="left" id="9lE-wN-43R">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="85l-SL-ofB"/>
+                                <button width="42" height="1" alignment="left" id="wes-GY-cN4"/>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="d7k-Yy-SYs"/>
+                            </items>
+                        </group>
+                        <group width="0.90000000000000002" alignment="center" id="eaH-jp-PhW">
+                            <items>
+                                <label alignment="left" text="1/20" id="0a2-kZ-fKK"/>
+                                <timer alignment="right" id="zG3-5X-Fx7">
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="answers" destination="9lE-wN-43R" id="uLm-NC-ohf"/>
+                        <outlet property="levelCounter" destination="0a2-kZ-fKK" id="LtT-E4-fiR"/>
+                        <outlet property="paper" destination="wes-GY-cN4" id="W71-ed-PDl"/>
+                        <outlet property="question" destination="AN6-LO-4fX" id="8O7-DL-ANA"/>
+                        <outlet property="rock" destination="85l-SL-ofB" id="dWZ-QO-A24"/>
+                        <outlet property="scissors" destination="d7k-Yy-SYs" id="E0G-bA-zZJ"/>
+                        <outlet property="timer" destination="zG3-5X-Fx7" id="3Th-Bt-wKA"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-66" y="-17"/>
         </scene>
     </scenes>
 </document>
