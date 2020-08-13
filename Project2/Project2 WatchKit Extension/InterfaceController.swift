@@ -8,6 +8,11 @@
 import WatchKit
 import Foundation
 
+enum Moves: String, CaseIterable {
+	case rock = "rock"
+	case paper = "paper"
+	case scissors = "scissors"
+}
 
 class InterfaceController: WKInterfaceController {
 
@@ -20,7 +25,7 @@ class InterfaceController: WKInterfaceController {
 	@IBOutlet weak var timer: WKInterfaceTimer!
 	@IBOutlet var result: WKInterfaceLabel!
 	
-	var allMoves = ["rock", "paper", "scissors"]
+	var allMoves = Moves.allCases
 	var shouldWin = true
 	var level = 1
 	
@@ -41,10 +46,10 @@ class InterfaceController: WKInterfaceController {
 			shouldWin = false
 		}
 		allMoves.shuffle()
-		question.setImage(UIImage(named: allMoves[0]))
+		question.setImage(UIImage(named: allMoves[0].rawValue))
 	}
 	
-	private func check(for answer: String) {
+	private func check(for answer: Moves) {
 		if allMoves[0] == answer {
 			level += 1
 			newLevel()
@@ -57,9 +62,9 @@ class InterfaceController: WKInterfaceController {
 	
 	override func awake(withContext context: Any?) {
 		super.awake(withContext: context)
-		rock.setBackgroundImage(UIImage(named: "rock"))
-		paper.setBackgroundImage(UIImage(named: "paper"))
-		scissors.setBackgroundImage(UIImage(named: "scissors"))
+		rock.setBackgroundImage(UIImage(named: Moves.rock.rawValue))
+		paper.setBackgroundImage(UIImage(named: Moves.paper.rawValue))
+		scissors.setBackgroundImage(UIImage(named: Moves.scissors.rawValue))
 		timer.start()
 		newLevel()
     }
@@ -74,25 +79,25 @@ class InterfaceController: WKInterfaceController {
 	
 	@IBAction func rockTapped() {
 		if shouldWin {
-			check(for: "scissors")
+			check(for: .scissors)
 		} else {
-			check(for: "paper")
+			check(for: .paper)
 		}
 	}
 	
 	@IBAction func paperTapped() {
 		if shouldWin {
-			check(for: "rock")
+			check(for: .rock)
 		} else {
-			check(for: "scissors")
+			check(for: .scissors)
 		}
 	}
 	
 	@IBAction func scissorsTapped() {
 		if shouldWin {
-			check(for: "paper")
+			check(for: .paper)
 		} else {
-			check(for: "rock")
+			check(for: .rock)
 		}
 	}
 }
