@@ -10,9 +10,15 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+	
+	@IBOutlet weak var table: WKInterfaceTable!
+	
     override func awake(withContext context: Any?) {
-        // Configure interface objects here.
+		table.setNumberOfRows(10, withRowType: "Row")
+		for rowIndex in 0 ..< 10 {
+			guard let row = table.rowController(at: rowIndex) as? NoteSelectRow else { continue }
+			row.textLabel.setText("Hello, row \(rowIndex + 1)")
+		}
     }
     
     override func willActivate() {
@@ -22,5 +28,8 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
     }
-
+	
+	@ IBAction func addNewNote() {
+		
+	}
 }
