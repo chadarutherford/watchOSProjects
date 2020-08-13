@@ -11,6 +11,9 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Project2_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label alignment="center" hidden="YES" text="You Win!" id="DGb-GA-Wey">
+                            <fontDescription key="font" type="system" pointSize="37"/>
+                        </label>
                         <imageView width="0.5" height="0.5" alignment="center" id="AN6-LO-4fX"/>
                         <separator alignment="left" id="PFD-q6-70d"/>
                         <group width="1" height="0.33000000000000002" alignment="left" id="9lE-wN-43R">
@@ -34,6 +37,7 @@
                         <outlet property="levelCounter" destination="0a2-kZ-fKK" id="LtT-E4-fiR"/>
                         <outlet property="paper" destination="wes-GY-cN4" id="W71-ed-PDl"/>
                         <outlet property="question" destination="AN6-LO-4fX" id="8O7-DL-ANA"/>
+                        <outlet property="result" destination="DGb-GA-Wey" id="Hry-Y0-Bby"/>
                         <outlet property="rock" destination="85l-SL-ofB" id="dWZ-QO-A24"/>
                         <outlet property="scissors" destination="d7k-Yy-SYs" id="E0G-bA-zZJ"/>
                         <outlet property="timer" destination="zG3-5X-Fx7" id="3Th-Bt-wKA"/>
