@@ -22,6 +22,7 @@
                                     </group>
                                     <connections>
                                         <outlet property="textLabel" destination="k5Y-75-fUk" id="xKg-Ef-CZt"/>
+                                        <segue destination="ebl-we-NaL" kind="push" id="jJS-wx-fw6"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -38,7 +39,21 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-66" y="-17"/>
+            <point key="canvasLocation" x="-222" y="43"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="O1b-ZQ-ssL">
+            <objects>
+                <controller id="ebl-we-NaL" customClass="DetailInterfaceController" customModule="Project1_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="KCw-oB-QhQ"/>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="KCw-oB-QhQ" id="VBF-hu-ccv"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="32" y="43"/>
         </scene>
     </scenes>
     <resources>
