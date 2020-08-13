@@ -25,6 +25,7 @@
 		634A890324E5CA1F00C339F7 /* CurrenciesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A890224E5CA1F00C339F7 /* CurrenciesInterfaceController.swift */; };
 		63A206A924E5CB1A009C29E4 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A206A824E5CB1A009C29E4 /* UIColor+Ext.swift */; };
 		63A206AB24E5CB9C009C29E4 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A206AA24E5CB9C009C29E4 /* String+Ext.swift */; };
+		63A206AD24E5D25D009C29E4 /* ResultsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A206AC24E5D25D009C29E4 /* ResultsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		634A890224E5CA1F00C339F7 /* CurrenciesInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesInterfaceController.swift; sourceTree = "<group>"; };
 		63A206A824E5CB1A009C29E4 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		63A206AA24E5CB9C009C29E4 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		63A206AC24E5D25D009C29E4 /* ResultsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				634A88F224E595B400C339F7 /* Info.plist */,
 				634A890024E5C96C00C339F7 /* CurrencyRow.swift */,
 				634A890224E5CA1F00C339F7 /* CurrenciesInterfaceController.swift */,
+				63A206AC24E5D25D009C29E4 /* ResultsInterfaceController.swift */,
 			);
 			path = "Project3 WatchKit Extension";
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				63A206AB24E5CB9C009C29E4 /* String+Ext.swift in Sources */,
 				634A88EB24E595B300C339F7 /* InterfaceController.swift in Sources */,
 				634A88EF24E595B300C339F7 /* ComplicationController.swift in Sources */,
+				63A206AD24E5D25D009C29E4 /* ResultsInterfaceController.swift in Sources */,
 				63A206A924E5CB1A009C29E4 /* UIColor+Ext.swift in Sources */,
 				634A890324E5CA1F00C339F7 /* CurrenciesInterfaceController.swift in Sources */,
 				634A890124E5C96C00C339F7 /* CurrencyRow.swift in Sources */,

@@ -10,4 +10,5 @@ import UIKit
 extension String {
 	static let selectedCurrenciesKey = "SelectedCurrencies"
 	static let row = "Row"
+	static let results = "Results"
 }
