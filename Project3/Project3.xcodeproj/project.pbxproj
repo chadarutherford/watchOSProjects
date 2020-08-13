@@ -21,6 +21,10 @@
 		634A88ED24E595B300C339F7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A88EC24E595B300C339F7 /* ExtensionDelegate.swift */; };
 		634A88EF24E595B300C339F7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A88EE24E595B300C339F7 /* ComplicationController.swift */; };
 		634A88F124E595B400C339F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634A88F024E595B400C339F7 /* Assets.xcassets */; };
+		634A890124E5C96C00C339F7 /* CurrencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A890024E5C96C00C339F7 /* CurrencyRow.swift */; };
+		634A890324E5CA1F00C339F7 /* CurrenciesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A890224E5CA1F00C339F7 /* CurrenciesInterfaceController.swift */; };
+		63A206A924E5CB1A009C29E4 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A206A824E5CB1A009C29E4 /* UIColor+Ext.swift */; };
+		63A206AB24E5CB9C009C29E4 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A206AA24E5CB9C009C29E4 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		634A88EE24E595B300C339F7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		634A88F024E595B400C339F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		634A88F224E595B400C339F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634A890024E5C96C00C339F7 /* CurrencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRow.swift; sourceTree = "<group>"; };
+		634A890224E5CA1F00C339F7 /* CurrenciesInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesInterfaceController.swift; sourceTree = "<group>"; };
+		63A206A824E5CB1A009C29E4 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		63A206AA24E5CB9C009C29E4 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,13 +159,25 @@
 		634A88E924E595B300C339F7 /* Project3 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				63A206A724E5CB0B009C29E4 /* Extensions */,
 				634A88EA24E595B300C339F7 /* InterfaceController.swift */,
 				634A88EC24E595B300C339F7 /* ExtensionDelegate.swift */,
 				634A88EE24E595B300C339F7 /* ComplicationController.swift */,
 				634A88F024E595B400C339F7 /* Assets.xcassets */,
 				634A88F224E595B400C339F7 /* Info.plist */,
+				634A890024E5C96C00C339F7 /* CurrencyRow.swift */,
+				634A890224E5CA1F00C339F7 /* CurrenciesInterfaceController.swift */,
 			);
 			path = "Project3 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		63A206A724E5CB0B009C29E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63A206A824E5CB1A009C29E4 /* UIColor+Ext.swift */,
+				63A206AA24E5CB9C009C29E4 /* String+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,8 +322,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				634A88ED24E595B300C339F7 /* ExtensionDelegate.swift in Sources */,
+				63A206AB24E5CB9C009C29E4 /* String+Ext.swift in Sources */,
 				634A88EB24E595B300C339F7 /* InterfaceController.swift in Sources */,
 				634A88EF24E595B300C339F7 /* ComplicationController.swift in Sources */,
+				63A206A924E5CB1A009C29E4 /* UIColor+Ext.swift in Sources */,
+				634A890324E5CA1F00C339F7 /* CurrenciesInterfaceController.swift in Sources */,
+				634A890124E5C96C00C339F7 /* CurrencyRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

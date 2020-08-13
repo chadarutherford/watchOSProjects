@@ -38,10 +38,39 @@
                         <outlet property="amountLabel" destination="zgI-Ok-aoY" id="cTh-9R-Yi7"/>
                         <outlet property="amountSlider" destination="k7v-ID-waa" id="JCJ-Vm-Uf7"/>
                         <outlet property="currencyPicker" destination="alD-9e-pOz" id="8wQ-8D-ua5"/>
+                        <segue destination="RXa-kD-gMZ" kind="relationship" relationship="nextPage" id="Jpe-X2-ZCf"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-195" y="-17"/>
+            <point key="canvasLocation" x="-475" y="-66"/>
+        </scene>
+        <!--Currencies-->
+        <scene sceneID="gJ4-ZE-0AC">
+            <objects>
+                <controller identifier="Currencies" title="Currencies" id="RXa-kD-gMZ" customClass="CurrenciesInterfaceController" customModule="Project3_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="BLr-4H-r0B">
+                            <items>
+                                <tableRow identifier="Row" id="Mjc-lo-8Zr" customClass="CurrencyRow" customModule="Project3_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="GTT-L3-5Zy">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="Rqe-bS-PPH"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="group" destination="GTT-L3-5Zy" id="IE0-Yx-qNm"/>
+                                        <outlet property="textLabel" destination="Rqe-bS-PPH" id="enG-cn-TSe"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="BLr-4H-r0B" id="1DO-Jv-G0S"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-243" y="-66"/>
         </scene>
     </scenes>
 </document>
